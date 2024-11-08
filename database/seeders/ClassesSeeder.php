@@ -6,6 +6,7 @@ use App\Models\Classes;
 use App\Models\Section;
 use App\Models\Student;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Eloquent\Factories\Sequence;
 use Illuminate\Database\Seeder;
 
 class ClassesSeeder extends Seeder
@@ -20,7 +21,7 @@ class ClassesSeeder extends Seeder
         ->sequence(fn($sequence) => ['name' => 'Class ' . $sequence->index + 1])
         ->has(
             Section::factory()
-                ->count(1)
+                ->count(2)
                 ->state(
                     new Sequence(
                         [ 'name' => 'Section A' ],
@@ -29,8 +30,9 @@ class ClassesSeeder extends Seeder
                 )
                 ->has(
                     Student::factory()
-                        ->count(2)
+                        ->count(5)
                         ->state(
+                            //skibidi?
                             fn(array $attributes, Section $section) => ['class_id' => $section->class_id]
                         )
                 )
