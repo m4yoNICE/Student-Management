@@ -24,12 +24,11 @@
                   <table class="min-w-full divide-y divide-gray-200 dark:divide-neutral-700" id="paginated-students">
                     <thead>
                       <tr>
-                        <th scope="col" class="px-6 py-3 text-xs font-medium text-gray-500 uppercase text-start dark:text-neutral-500">ID</th>
-                        <th scope="col" class="px-6 py-3 text-xs font-medium text-gray-500 uppercase text-start dark:text-neutral-500">Name</th>
-                        <th scope="col" class="px-6 py-3 text-xs font-medium text-gray-500 uppercase text-start dark:text-neutral-500">Email</th>
-                        <th scope="col" class="px-6 py-3 text-xs font-medium text-gray-500 uppercase text-start dark:text-neutral-500">Class</th>
-                        <th scope="col" class="px-6 py-3 text-xs font-medium text-gray-500 uppercase text-start dark:text-neutral-500">Section</th>
-                        <th scope="col" class="px-6 py-3 text-xs font-medium text-gray-500 uppercase text-end dark:text-neutral-500">Action</th>
+                        <th scope="col" class="px-6 py-3 text-sm font-medium uppercase text-start">ID</th>
+                        <th scope="col" class="px-6 py-3 text-sm font-medium uppercase text-start">Name</th>
+                        <th scope="col" class="px-6 py-3 text-sm font-medium uppercase text-start">Email</th>
+                        <th scope="col" class="px-6 py-3 text-sm font-medium uppercase text-start">Class</th>
+                        <th scope="col" class="px-6 py-3 text-sm font-medium uppercase text-start">Section</th>
                       </tr>
                     </thead>
                     <tbody>
